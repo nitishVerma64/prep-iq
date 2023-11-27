@@ -1,0 +1,10 @@
+.group-main{
+    display: flex;
+    position: relative;
+}
+.group-convers-detail{
+    flex: 4;
+}
+.all-joined-group-list{
+    flex: 1;
+}

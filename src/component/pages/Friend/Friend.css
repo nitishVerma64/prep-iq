@@ -1,0 +1,35 @@
+.friend-main,.friend-suggestion-filter, .friend-request-box>h1{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-bottom: 2rem;
+}
+
+.friend-suggestion-filter{
+ align-items: center;
+ gap: 75px;
+}
+
+.friend-details{
+        display: flex;  
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 10px 40px;
+        border-bottom: 2px solid var(--clr-DarkColor);
+        margin-bottom: 15px;
+        gap: 30px;
+}
+
+
+.friend-request-btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.friend-name-major{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
