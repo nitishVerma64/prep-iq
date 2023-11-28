@@ -1,5 +1,5 @@
 
-.profile-main,.profile-main-name,.profile-main-img,.profile-main{
+.profile-main,.profile-main-name,.profile-main-img,.profile-main,.profile-main-report{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     gap: 30px;
 }
 
-.profile-main-detail,.profile-main-rank-list,.profile-main-report{
+.profile-main-detail,.profile-main-rank-list,.profile-main-report,.profile-main-report-test-report-btn{
     display: flex;
     position: relative;
     gap: 50px;
@@ -19,8 +19,12 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.profile-main-rank-list{
+.profile-main-rank-list,.profile-main-report-test-report-btn{
     flex-wrap: wrap;
+}
+
+.profile-main-report-test-report-btn{
+    box-shadow: none;
 }
 
 .profile-main-heading{
@@ -45,19 +49,24 @@
     background-color: var(--clr-LightColor);
 }
 
-.profile-main-report-test-report-btn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+.report-overlayer{
+    margin-top: -590px;
 }
 
-
 .test-report-btn{
+    border-radius: 10px;
     font-size: 1.8rem;
-    background-color: var(--clr-LightColor);   
+    font-weight: 600;
+    width: 13rem;
+    padding: 10px;
+    background-color: var(--clr-LightColor);
+    border-color:  var(--clr-DarkColor);
+}
+
+.test-report-btn:hover{
+    cursor: pointer;
+    background-color: var(--clr-DarkColor);
+    color: var(--clr-LightColor);
 }
 
 .profile-main-report-chart>img{
@@ -75,6 +84,21 @@
     }
 
     .profile-main-rank-card{
-        padding: 10px 8vw;
+        padding: 10px 7vw;
+    }
+
+    .test-report-btn{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:620px){
+    .profile-main-rank-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rank-list-overlayer{
+        margin-top: -550px;
     }
 }
