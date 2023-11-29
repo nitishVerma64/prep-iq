@@ -61,13 +61,13 @@ const Profile = () => {
                   <div className="profile-main-report-chart" >
                       <img src={Chart} alt="" />
                   </div>
-                  <div className="profile-main-heading report-overlayer">
-                    Report
-                  </div>
                   <div className="profile-main-report-test-report-btn">
                         <button className='test-report-btn'>OverAll Test Report</button>
                         <button className='test-report-btn'> Weekly Test Report</button>
                         <button className='test-report-btn'>Monthly Test Report</button>
+                  </div>
+                  <div className="profile-main-heading report-overlayer">
+                    Report
                   </div>
               </div>
             </div>

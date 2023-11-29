@@ -3,8 +3,10 @@
     justify-content: space-around;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border: 1px solid var(--clr-DarkColor);
-    padding: 10px 0;
+    padding: 15px 15px;
     margin: 1rem 4rem;
+    gap: 25px;
     border-radius: 10px;
     background-color: var(--clr-LightColor);
+    flex-wrap: wrap;
 }
