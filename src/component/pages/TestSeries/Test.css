@@ -10,3 +10,21 @@
     background-color: var(--clr-LightColor);
     flex-wrap: wrap;
 }
+
+spant{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+    .test-main{
+        margin: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .test-main{
+        padding: 5px 5px;
+        margin: 1rem 0;
+    }
+}

@@ -13,7 +13,7 @@ const Profile = () => {
         <Box height={70} sx={{backgroundColor:"var(--backGroundColor)"}}></Box>
         <Box sx={{display:'flex',minHeight:"100vh", backgroundColor:"var(--backGroundColor)"}}>
           <Sidenav/>
-          <Box component="main" sx={{flexGrow:1,p:3, display:"flex",flexDirection:"column"}}>  
+          <Box component="main" sx={{flexGrow:1, paddingTop:2 , display:"flex",flexDirection:"column"}}>  
             <div className="profile-main">
               <div className="profile-main-detail">
                   <div className="profile-main-img">

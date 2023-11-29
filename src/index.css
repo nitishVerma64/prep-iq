@@ -39,7 +39,7 @@ h1{
     width: fit-content;
     border-radius: 10px;
     background-color: var(--backGroundColor);
-    border-color:  var(--clr-DarkColor);
+    border: 2px solid var(--clr-DarkColor);
 }
 
 .btn:hover{

@@ -7,7 +7,7 @@
     gap: 30px;
 }
 
-.profile-main-detail,.profile-main-rank-list,.profile-main-report,.profile-main-report-test-report-btn{
+.profile-main-detail,.profile-main-rank-list,.profile-main-report{
     display: flex;
     position: relative;
     gap: 50px;
@@ -21,10 +21,14 @@
 
 .profile-main-rank-list,.profile-main-report-test-report-btn{
     flex-wrap: wrap;
+
 }
 
 .profile-main-report-test-report-btn{
-    box-shadow: none;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 25px;
 }
 
 .profile-main-heading{
@@ -50,17 +54,17 @@
 }
 
 .report-overlayer{
-    margin-top: -590px;
+    margin-top: -540px;
 }
 
 .test-report-btn{
     border-radius: 10px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    width: 13rem;
+    width: 10rem;
     padding: 10px;
     background-color: var(--clr-LightColor);
-    border-color:  var(--clr-DarkColor);
+    border:  2px solid var(--clr-DarkColor);
 }
 
 .test-report-btn:hover{
@@ -88,7 +92,12 @@
     }
 
     .test-report-btn{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        width: 9rem;
+    }
+
+    .profile-main-report{
+        gap: 10px;
     }
 }
 
