@@ -8,10 +8,10 @@ const FriendRequest = ({name}) => {
             <Avatar className='friend-avatar'
             alt="Remy Sharp"
             src=""
-            sx={{ width: 75, height: 75 }}
+            sx={{ width: 40, height: 40 }}
             />
             <div className="friend-name-major">
-                <h2>{name}</h2>
+                <h3>{name}</h3>
                 <div className="friend-request-btn">
                 <button className="btn">Confirm</button>
                 <button className="btn">Reject</button>

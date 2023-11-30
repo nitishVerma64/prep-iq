@@ -8,11 +8,11 @@ const FriendSuggestion = ({name,major,profileImg}) => {
             <Avatar className='friend-avatar'
             alt="Remy Sharp"
             src=""
-            sx={{ width: 75, height: 75 }}
+            sx={{ width: 40, height: 40 }}
             />
             <div className="friend-name-major">
-                <h2>{name}</h2>
-                <h4>{major}</h4>
+                <h3>{name}</h3>
+                <h5>{major}</h5>
             </div>
             <button className="btn">Add</button>
         </div>

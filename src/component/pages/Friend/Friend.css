@@ -1,4 +1,4 @@
-.friend-main,.friend-suggestion-filter, .friend-request-box>h1{
+.friend-main,.friend-suggestion-filter, .friend-request-box>h2{
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
@@ -32,4 +32,48 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+    .friend-details{
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .friend-name-major>h3{
+        display: inline;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .friend-suggestion-filter>h2, .friend-request-box>h2{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .friend-main{
+        gap: 10px;
+    }
+    .friend-name-major>h3{
+        display: block;
+        font-size: 0.9rem;
+    }
+
+    .friend-name-major>h5{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .friend-main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .friend-details{
+        width: auto;
+    }
+    
 }

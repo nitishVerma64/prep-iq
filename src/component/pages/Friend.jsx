@@ -15,12 +15,12 @@ const Friend = () => {
         <Box height={70} backgroundColor="var(--backGroundColor)"></Box>
         <Box sx={{display:'flex', minHeight:"100vh", backgroundColor:"var(--backGroundColor)"}}>
           <Sidenav/>
-          <Box component="main" sx={{flexGrow:1,p:3}}>  
+          <Box component="main" sx={{flexGrow:1,p:1}}>  
              <div className="friend-main">
                 <div className="friend-suggestion-box">
                   <div className="friend-suggestion-filter">
-                    <h1>Friend Suggestion</h1>
-                    <h3>Filter</h3>
+                    <h2>Friend Suggestion</h2>
+                    <h5>Filter</h5>
                   </div>
                   <div className="friend-suggestion">
                     {friendSuggestion.map((data)=>{
@@ -29,7 +29,7 @@ const Friend = () => {
                   </div>
                 </div>
                 <div className="friend-request-box">
-                  <h1>Friend Request</h1>
+                  <h2>Friend Request</h2>
                   <div className="friend-request">
                     {friendRequest.map((data)=>{
                       return <FriendRequest {...data}/>
