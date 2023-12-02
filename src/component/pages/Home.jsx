@@ -16,20 +16,21 @@ const Home = () => {
         <Box height={70} backgroundColor="var(--backGroundColor)"></Box>
         <Box sx={{display:'flex',minHeight:"100vh",minWidth:"100vw", backgroundColor:"var(--backGroundColor)"}}>
           <Sidenav/>
-          <Box component="main" sx={{flexGrow:1,p:3}}>  
+          <Box component="main" sx={{flexGrow:1,p:1}}>  
             <div className="cardlist" style={{display: "flex",justifyContent:"center",alignItems:"center",flexDirection:"column" }}>
               <Card/><br />
               <Card/><br />
               <Card/><br />
               <Card/><br />
             </div> 
-            <Box sx={{ '& > :not(style)': { m: 1 }, position:"fixed", right:50 , bottom:50 }} onClick={()=>setOpenAddPost(true) }>
+                    
+          </Box>
+          <Box sx={{ '& > :not(style)': { m: 1 }, position:"fixed", right:50 , bottom:50 }} onClick={()=>setOpenAddPost(true) }>
               <Fab color="primary" aria-label="add" sx={{backgroundColor: "var(--clr-DarkColor)" }}>
                 <AddIcon />
               </Fab>
               <p>Add Post</p>
-            </Box>           
-          </Box>
+            </Box>  
          
 
         </Box>

@@ -24,11 +24,13 @@ import '../index.css';
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
-  width: drawerWidth,
   transition: theme.transitions.create('width', {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.enteringScreen,
   }),
+  [theme.breakpoints.up('sm')]: {
+    width: drawerWidth,
+  },
   overflowX: 'hidden',
 });
 
@@ -55,7 +57,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
-    width: drawerWidth,
     flexShrink: 0,
     whiteSpace: 'nowrap',
     boxSizing: 'border-box',
@@ -71,18 +72,20 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 );
 
 export default function Sidenav() {
-  const open=useAppStore((state)=> state.dopen);
+  const open=useAppStore((state)=> state.dopen);  
+  const updateOpen= useAppStore((state)=>state.updateOpen);
   const navigate = useNavigate();
+  const mobClassName = open ? 'make-mob-responsive' : '';
 
   return (
     <>
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
-        <Drawer variant="permanent" open={open}>
+      <Drawer variant="permanent" className={mobClassName} open={open}>
           <DrawerHeader>
           </DrawerHeader>
-          <List sx={{backgroundColor:"var(--backGroundColor)", height:"100vh"}}>
-            <ListItem className='Sidenav-listitem' key="Home" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/")}}>
+          <List sx={{backgroundColor:"var(--backGroundColor)", height:"100vh" }}>
+            <ListItem className='Sidenav-listitem' key="Home" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/"); updateOpen(open?!open:open)}}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,
@@ -102,7 +105,7 @@ export default function Sidenav() {
                   <ListItemText primary="Home" sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
-              <ListItem className='Sidenav-listitem' key="Profile" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Profile")}}>
+              <ListItem className='Sidenav-listitem' key="Profile" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Profile"); updateOpen(open?!open:open)}}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,
@@ -122,7 +125,7 @@ export default function Sidenav() {
                   <ListItemText primary="Profile" sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
-              <ListItem className='Sidenav-listitem' key="TestSeries" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Testseries")}}>
+              <ListItem className='Sidenav-listitem' key="TestSeries" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Testseries"); updateOpen(open?!open:open)}}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,
@@ -142,7 +145,7 @@ export default function Sidenav() {
                   <ListItemText primary="TestSeries" sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
-              <ListItem className='Sidenav-listitem' key="Group" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Group")}}>
+              <ListItem className='Sidenav-listitem' key="Group" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Group"); updateOpen(open?!open:open)}}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,
@@ -162,7 +165,7 @@ export default function Sidenav() {
                   <ListItemText primary="Group" sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
-              <ListItem className='Sidenav-listitem' key="Friend" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Friend")}}>
+              <ListItem className='Sidenav-listitem' key="Friend" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Friend"); updateOpen(open?!open:open)}}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,
@@ -182,7 +185,7 @@ export default function Sidenav() {
                   <ListItemText primary="Friend" sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
-              <ListItem className='Sidenav-listitem' key="Notifications" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Notifications")}}>
+              <ListItem className='Sidenav-listitem' key="Notifications" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Notifications"); updateOpen(open?!open:open)}}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,
@@ -202,7 +205,7 @@ export default function Sidenav() {
                   <ListItemText primary="Notifications" sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
-              <ListItem className='Sidenav-listitem' key="Setting" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Setting")}}>
+              <ListItem className='Sidenav-listitem' key="Setting" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Setting"); updateOpen(open?!open:open)}}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,
@@ -222,7 +225,7 @@ export default function Sidenav() {
                   <ListItemText primary="Setting" sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
-              <ListItem className='Sidenav-listitem' key="LogOut" disablePadding sx={{ display: 'block' }} onClick={()=>{}}>
+              <ListItem className='Sidenav-listitem' key="LogOut" disablePadding sx={{ display: 'block' }} onClick={()=>{ updateOpen(open?!open:open)}}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,
