@@ -54,7 +54,9 @@
 }
 
 .report-overlayer{
-    margin-top: -540px;
+    /* margin-top: -540px; */
+    top: 0;
+
 }
 
 .test-report-btn{
@@ -98,6 +100,9 @@
 
     .profile-main-report{
         gap: 10px;
+    }
+    .profile-main-heading report-overlayer {
+        position: relative;
     }
 }
 

@@ -65,8 +65,8 @@ const Profile = () => {
                         <button className='test-report-btn'>OverAll Test Report</button>
                         <button className='test-report-btn'> Weekly Test Report</button>
                         <button className='test-report-btn'>Monthly Test Report</button>
-                  </div>
-                  <div className="profile-main-heading report-overlayer">
+                  </div>profile-main-heading report-overlayer
+                  <div className="">
                     Report
                   </div>
               </div>
