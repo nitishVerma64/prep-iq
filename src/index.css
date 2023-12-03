@@ -47,3 +47,9 @@ h1{
     background-color: var(--clr-DarkColor);
     color: var(--clr-LightColor);
 }
+
+@media screen and (max-width:500px) {
+  h1{
+    font-size: 2rem;
+  }
+}

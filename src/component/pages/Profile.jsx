@@ -27,7 +27,7 @@ const Profile = () => {
                       <h2>Nitish Verma</h2>
                       <h3>Biodata</h3>
                   </div>
-                  <div className="profile-main-heading  profile-overlayer">
+                  <div className="profile-main-heading">
                     Profile
                   </div>
               </div>
@@ -53,7 +53,7 @@ const Profile = () => {
                       India Rank
                     </button>
                   </div>
-                  <div className="profile-main-heading rank-list-overlayer">
+                  <div className="profile-main-heading">
                     Rank List
                   </div>
               </div>
@@ -65,8 +65,8 @@ const Profile = () => {
                         <button className='test-report-btn'>OverAll Test Report</button>
                         <button className='test-report-btn'> Weekly Test Report</button>
                         <button className='test-report-btn'>Monthly Test Report</button>
-                  </div>profile-main-heading report-overlayer
-                  <div className="">
+                  </div>
+                  <div className="profile-main-heading">
                     Report
                   </div>
               </div>

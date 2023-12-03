@@ -5,6 +5,7 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .profile-main-detail,.profile-main-rank-list,.profile-main-report{
@@ -37,7 +38,7 @@
     position: absolute;
     padding: 2px 8px;
     border-radius: 8px;
-    margin-top: -30px;
+    top: -10px;
     left: 3rem;
 }
 
@@ -53,11 +54,6 @@
     background-color: var(--clr-LightColor);
 }
 
-.report-overlayer{
-    /* margin-top: -540px; */
-    top: 0;
-
-}
 
 .test-report-btn{
     border-radius: 10px;
@@ -85,10 +81,6 @@
         flex-direction: column;
     }
 
-    .profile-overlayer{
-        margin-top: -270px;
-    }
-
     .profile-main-rank-card{
         padding: 10px 7vw;
     }
@@ -101,9 +93,6 @@
     .profile-main-report{
         gap: 10px;
     }
-    .profile-main-heading report-overlayer {
-        position: relative;
-    }
 }
 
 @media screen and (max-width:620px){
@@ -112,7 +101,22 @@
         align-items: center;
     }
 
-    .rank-list-overlayer{
-        margin-top: -550px;
+    .profile-main-report-test-report-btn{
+        gap: 10px;
+    }
+
+    .test-report-btn{
+        font-size: 0.8rem;
+        padding: 5px;
+        width: 5.5rem;
+    }
+}
+
+@media screen and (max-width:440px){
+
+    .test-report-btn{
+        font-size: 0.6rem;
+        padding: 2px;
+        width: 4rem;
     }
 }
