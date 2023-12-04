@@ -98,15 +98,14 @@ export default function Sidenav() {
   const open=useAppStore((state)=> state.dopen);  
   const updateOpen= useAppStore((state)=>state.updateOpen);
   const navigate = useNavigate();
-  const mobClassName = open ? 'make-mob-responsive' : '';
   return (
     <>
       <Box sx={{ display: 'flex' }}>  
-      <Drawer variant="permanent" className={mobClassName} open={open}>
+      <Drawer variant="permanent" open={open}>
           <DrawerHeader>
           </DrawerHeader>
           <List sx={{backgroundColor:"var(--backGroundColor)", height:"100vh" }}>
-            <ListItem className='Sidenav-listitem' key="Home" disablePadding sx={{ display: 'block' }}  onClick={()=>{navigate("/"); if(screen<600){} updateOpen( open?!open:open)}}>
+            <ListItem className='Sidenav-listitem' key="Home" disablePadding sx={{ display: 'block' }}  onClick={()=>{navigate("/"); updateOpen( open?!open:open)}}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,

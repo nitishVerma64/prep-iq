@@ -13,8 +13,8 @@ const Testseries = () => {
   return (
     <>
       <Navbar/>
-        <Box height={70} sx={{backgroundColor:"#ECF9E9"}}></Box>
-        <Box sx={{display:'flex',backgroundColor:"#ECF9E9", minHeight:"100vh"}}>
+        <Box height={70} sx={{backgroundColor:"var(--backGroundColor)"}}></Box>
+        <Box sx={{display:'flex',backgroundColor:"var(--backGroundColor)", minHeight:"100vh"}}>
           <Sidenav/>
           <Box component="main" sx={{flexGrow:1,p:1}}>
             <h2>Live Test</h2> 
