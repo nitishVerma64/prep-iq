@@ -4,8 +4,11 @@ const AllGroupBox = ({name,discriptiion, member}) => {
         <div className="all-group-box-main">
             <div className="group-box-discription">
                 <div className="group-box-heading-member">
-                    <h2>{name}</h2>
-                    <h6>{member}+ Members</h6>
+                    <img src="" alt="dsfn" />
+                    <div className="group-box-name">
+                        <h2>{name}</h2>
+                        <h6>{member}+ Members</h6>
+                    </div>
                 </div>
                 <div className="group-box-detail">
                     <p>{discriptiion}</p>

@@ -145,7 +145,7 @@ export default function Navbar() {
           aria-label="show 17 new notifications"
           color="inherit"
         >
-          <Badge badgeContent={7} color="error">
+          <Badge badgeContent={4} color="error"  onClick={()=>{navigate("/Notifications")}}>
             <NotificationsIcon />
           </Badge>
         </IconButton>

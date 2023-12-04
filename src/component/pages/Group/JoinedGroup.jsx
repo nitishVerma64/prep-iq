@@ -1,9 +1,16 @@
 import React from 'react'
-import { JoinedGroupData } from './AllGroupData'
 
-const JoinedGroup = () => {
+const JoinedGroup = ({name,active}) => {
   return (
-    <div>JoinedGroup</div>
+    <div className="joined-group-main">
+      <div className="joined-group-name">
+        <img src="" alt="iknd" />
+        <h3>{name}</h3>
+      </div>
+      <div className="joined-group-active">
+        <h6>{active} online Member</h6>
+      </div>
+    </div>
   )
 }
 

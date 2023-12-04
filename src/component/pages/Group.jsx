@@ -5,6 +5,7 @@ import Navbar from '../Navbar';
 import './Group/Group.css'
 import AllGroups from './Group/AllGroups';
 import JoinedGroup from './Group/JoinedGroup';
+import {JoinedGroupData} from './Group/AllGroupData'
 
 const Group = () => {
   return (
@@ -13,7 +14,7 @@ const Group = () => {
         <Box height={70} backgroundColor="var(--backGroundColor)"></Box>
         <Box sx={{display:'flex', minHeight:"100vh", backgroundColor:"var(--backGroundColor)"}}>
           <Sidenav/>
-          <Box component="main" sx={{flexGrow:1,p:3}}>  
+          <Box component="main" sx={{flexGrow:1,p:1}}>  
              <div className="group-main">
                 <div className="group-convers-detail">
                   <AllGroups/>
@@ -23,7 +24,11 @@ const Group = () => {
                     <h2 >Joined Groups</h2>
                   </div>
                   <div className="group-ined-list">
-                    <JoinedGroup/>
+                    {
+                      JoinedGroupData.map(
+                        (data)=>{return <JoinedGroup {...data}/>}
+                      )
+                    }
                   </div>
                   <div className="bottom-join-create-group">
                     <button className='btn'>Join</button>
