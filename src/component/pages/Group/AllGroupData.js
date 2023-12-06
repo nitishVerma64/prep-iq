@@ -1,39 +1,39 @@
 
 const AllGroupData= [
     {
-        name:"Topper Boys",
-        discriptiion: "fsdf hr;oighrw horigh/ roeghoerhg reogherg oerhgoehrgjerp",
-        member: 243
+        name:"Brainy Bunch",
+        discriptiion: "Unleashing the power of collective intelligence through focused study sessions.",
+        member: 3000
     },
     {
-        name:"Topper Boys",
-        discriptiion: "fsdf hr;oighrw horigh/ roeghoerhg reogherg oerhgoehrgjerp",
-        member: 243
+        name:"Study Squad",
+        discriptiion: "Where knowledge meets camaraderie—because studying is better together.",
+        member: 1500
     },
     {
-        name:"Topper  ne;enl ;gj Boys",
-        discriptiion: "fsdf hr;oighrw horigh/ roeghoerhg reoghlrgsnkvd lsbkdvn,m  knlsvdm , eknldvs, erg oerhgoehrgjerp",
-        member: 243
+        name:"The Learning Lounge",
+        discriptiion: "A cozy space for sharing insights, resources, and mutual academic support.",
+        member: 878
     },
     {
-        name:"Topper Boys esglmd;v em;lvds  kelm",
-        discriptiion: "fsdf herhg reogherg oerhgoehrgjerp",
-        member: 243
+        name:"Scholarly Sprints",
+        discriptiion: "Sprinting through syllabi together, because academic races are won in teams.",
+        member: 2435
     }
 ]
 
 export const JoinedGroupData= [
     {
-        name:"Topper Boys",
-        active: 243
+        name:"Knowledge Knights",
+        active: 400
     },
     {
-        name:"Topper Boys",
-        active: 243
+        name:"Genius Junction",
+        active: 155
     },
     {
-        name:"Topper Boys",
-        active: 243
+        name:"Study Sparks",
+        active: 573
     }
 ]
 

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Box } from '@mui/material';
-import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
@@ -15,12 +14,11 @@ import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 
 export default function AddPost(props) {
-
   const {openAddPost,setOpenAddPost }=props;
 
   return (
     <Dialog open={openAddPost} onClose={()=>setOpenAddPost(false)}>
-      <DialogTitle sx={{ m: 0, p: 1.5 , width:600, display:"flex" ,justifyContent:"center", fontWeight:"600"}} id="customized-dialog-title">
+      <DialogTitle  sx={{ m: 0, p: 1.5 , width:"40vw", display:"flex" ,justifyContent:"center", fontWeight:"600",backgroundColor:"var(--backGroundColor)"}} id="customized-dialog-title">
           Create Post
         </DialogTitle>
         <IconButton
@@ -36,7 +34,7 @@ export default function AddPost(props) {
           <CloseIcon />
         </IconButton>
         <Divider variant="middle" />
-      <DialogContent sx={{ m: 0, p: 2 , width:600, height:380}}>
+      <DialogContent  sx={{ m: 0, p: 2 , width:"40vw", height:380,backgroundColor:"var(--backGroundColor)", }}>
           <Box sx={{p:1, display:"flex"}}>
             <Avatar
               alt="Remy Sharp"
@@ -61,14 +59,14 @@ export default function AddPost(props) {
             />
           </Box>
           <Box sx={{mt:2,display:"flex", justifyContent:"center", gap:2,mb:2}}>
-              <InsertPhotoIcon sx={{ fontSize: 35 }}/>
-              <CameraAltIcon sx={{ fontSize: 35 }}/>
-              <AttachFileIcon sx={{ fontSize: 35 }}/>
+              <InsertPhotoIcon sx={{ fontSize: 35 ,cursor:"pointer"}}/>
+              <CameraAltIcon sx={{ fontSize: 35,cursor:"pointer" }}/>
+              <AttachFileIcon sx={{ fontSize: 35,cursor:"pointer" }}/>
           </Box>
           <Box sx={{display:"flex", justifyContent:"center"}}>
-            <Button autoFocu>
+            <button  className='btn'>
               Post
-            </Button>
+            </button>
           </Box>
       </DialogContent>
     </Dialog>
