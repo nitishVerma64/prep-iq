@@ -7,6 +7,7 @@ import Group from './component/pages/Group.jsx';
 import Friend from './component/pages/Friend.jsx';
 import Notifications from './component/pages/Notifications.jsx';
 import Setting from './component/pages/Setting.jsx';
+import Login from './component/pages/Login.jsx';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/friend" exact element={<Friend/>}></Route>
         <Route path="/notifications" exact element={<Notifications/>}></Route>
         <Route path="/setting" exact element={<Setting/>}></Route>
+        <Route path='/Login' exact element={<Login/>}></Route>
       </Routes>   
     </BrowserRouter>
     </>

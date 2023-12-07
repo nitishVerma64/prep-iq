@@ -245,7 +245,7 @@ export default function Sidenav() {
                   <ListItemText primary="Setting" sx={{ opacity: open ? 1 : 0 }} />
                 </ListItemButton>
               </ListItem>
-              <ListItem className='Sidenav-listitem' key="LogOut" disablePadding sx={{ display: 'block' }} onClick={()=>{ updateOpen(open?!open:open)}}>
+              <ListItem className='Sidenav-listitem' key="LogOut" disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Login"); updateOpen(open?!open:open)}}>
                 <ListItemButton
                   sx={{
                     minHeight: 48,
