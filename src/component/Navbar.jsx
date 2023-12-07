@@ -139,30 +139,20 @@ export default function Navbar() {
         </IconButton>
         <p>Messages</p>
       </MenuItem>
-      <MenuItem>
+      <MenuItem onClick={()=>{navigate("/Notifications")}}>
         <IconButton
           size="large"
           aria-label="show 17 new notifications"
           color="inherit"
         >
-          <Badge badgeContent={4} color="error"  onClick={()=>{navigate("/Notifications")}}>
+          <Badge badgeContent={4} color="error" >
             <NotificationsIcon />
           </Badge>
         </IconButton>
         <p>Notifications</p>
       </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="60px"
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
+      <MenuItem sx={{justifyContent:'center'}} onClick={handleProfileMenuOpen}>
+        <p>more..</p>
       </MenuItem>
     </Menu>
   );
@@ -205,8 +195,9 @@ export default function Navbar() {
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
+              onClick={()=>{navigate("/Notifications")}}
             >
-              <Badge badgeContent={7} color="error">
+              <Badge badgeContent={4} color="error">
                 <NotificationsIcon />
               </Badge>
             </IconButton>

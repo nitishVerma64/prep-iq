@@ -23,7 +23,7 @@ const Group = () => {
                   <div className="group-as-heading">
                     <h2 >Joined Groups</h2>
                   </div>
-                  <div className="group-ined-list">
+                  <div className="group-joined-list">
                     {
                       JoinedGroupData.map(
                         (data)=>{return <JoinedGroup {...data}/>}

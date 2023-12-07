@@ -14,7 +14,7 @@ const PreviousTest = ({testName,duration,question,date}) => {
         </div>
         <div className="test-date-button">
             <h4>Date-{date}</h4>
-            <button className='btn'>View details</button>
+            <button className='btn'>View Rank</button>
         </div>
     </div>  
   )
