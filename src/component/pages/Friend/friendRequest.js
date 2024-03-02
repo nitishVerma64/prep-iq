@@ -3,11 +3,11 @@ import React from 'react'
 const  friendRequest = [
     {
         name: "Nitish Verma",
-        profileImg:"./dsfs"
+        profileImg:"../../../assets/profileImages/profile1.jpg"
     },
     {
         name: "Ajay Verma",
-        profileImg: "./sdfndsknf"
+        profileImg: "../../../assets/profileImages/profile2.jpg"
     }
    
 ];
